@@ -1,4 +1,4 @@
-# iconsaiDiscoveryShowCase
+# discovery
 
 Página showcase do **Icons.ai · Discovery** — animação canônica (estilo Canopy intro) com 5 cenas que apresentam a busca semântica governamental.
 
@@ -18,8 +18,8 @@ npm run dev
 ## Deploy
 
 1. `npm run build`
-2. `rsync .next/standalone/ .next/static/ public/ root@<droplet>:/opt/iconsai-discovery-showcase/app/ --delete`
-3. systemd unit `iconsai-discovery-showcase.service`
+2. `rsync .next/standalone/ .next/static/ public/ root@<droplet>:/opt/discovery/app/ --delete`
+3. systemd unit `discovery.service`
 4. Caddy: `icon.iconsai.ai/discovery/*` → `127.0.0.1:3102/discovery/*`
 
 ## Cenas (5)
@@ -32,4 +32,4 @@ npm run dev
 
 Editar `components/canopy-intro/scenes.ts` para mudar o roteiro.
 
-CanopyIntro é compartilhado entre 6 ShowCases. Sincronize ao editar.
+CanopyIntro é compartilhado entre 6 showcases. Sincronize ao editar.
